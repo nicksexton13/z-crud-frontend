@@ -54,7 +54,10 @@ export default function SignIn() {
 				cookies.set('user_id', `${data.id}`);
 				cookies.set('user', `${data.username}`);
 			})
-			.catch((error) => alert('Cannot sign in'));
+			.catch((error) => {
+				console.log(error);
+				alert('Cannot sign in');
+			});
 	};
 
 	return (

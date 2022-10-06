@@ -12,7 +12,7 @@ export const AppContext = createContext();
 
 function App() {
 	const cookies = new Cookies();
-	const apiServer = 'https://z-crud-api.herokuapp.com/';
+	const apiServer = 'https://z-crud-api.herokuapp.com';
 	const [tableData, setTableData] = useState([]);
 	const [userData, setUserData] = useState([]);
 	const [triggerRerender, setTriggerRerender] = useState([]);
